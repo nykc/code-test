@@ -1,0 +1,33 @@
+footer {
+  clear: both;
+  height: 75px;
+  background-color: #fbfafa;
+  width: 100%;
+  display: table;
+  color: #2e2e2e;
+  font-size: 14px;
+  font-weight: normal;
+  .copyright {
+    display: table-cell;
+    vertical-align: middle;
+    p {
+      float: left;
+      padding-left: 20px;
+    }
+  }
+  .contact {
+    display: table-cell;
+    vertical-align: middle;
+    p {
+      float: right;
+      padding-right: 20px;
+    }
+    &__link {
+      text-decoration: none;
+      color: #2e2e2e;
+    }
+  }
+}
+.separator {
+  padding: 0 10px;
+}

@@ -12,13 +12,21 @@ header {
       height: 100%;
       background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, transparent 60%);
     }
-    .hashtag {
-      color: white;
-      font-weight: bold;
-      font-family: '';
-      position: absolute;
-      top: 25px;
-      right: 20px;
+    .instagram {
+        position: absolute;
+        top: 25px;
+        right: 20px;
+        line-height: 1;
+      img {
+        float: left;
+        padding-right: 5px;
+      }
+      .hashtag {
+        color: white;
+        font-weight: 600;
+        font-size: 15px;
+        font-family: Montserrat, sans-serif;
+      }
     }
   }
   nav {
@@ -39,8 +47,8 @@ header {
         a {
           text-decoration: none;
           font-size: 20px;
-        line-height: 1.2;
-          color: rgb(46,46,46);
+          line-height: 1.2;
+          color: #2e2e2e;
         }
       }
       li:last-child {
