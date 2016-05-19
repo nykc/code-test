@@ -1,33 +1,45 @@
 footer {
   clear: both;
-  height: 75px;
   background-color: #fbfafa;
+  height: 50px;
   width: 100%;
-  display: table;
   color: #2e2e2e;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: normal;
+  padding: 20px;
+  @include breakpoint($tablet-narrow) {
+    padding: 0;
+    display: table;
+    font-size: 14px;
+    height: 75px;
+  }
   .copyright {
-    display: table-cell;
-    vertical-align: middle;
-    p {
-      float: left;
-      padding-left: 20px;
+    display: block;
+    @include breakpoint($tablet-narrow) {
+      display: table-cell;
+      vertical-align: middle;
+      p {
+        float: left;
+        padding-left: 20px;
+      }
     }
   }
   .contact {
-    display: table-cell;
-    vertical-align: middle;
-    p {
-      float: right;
-      padding-right: 20px;
-    }
-    &__link {
-      text-decoration: none;
-      color: #2e2e2e;
+    display: none;
+    @include breakpoint($tablet-narrow) {
+      display: table-cell;
+      vertical-align: middle;
+      p {
+        float: right;
+        padding-right: 20px;
+      }
+      &__link {
+        text-decoration: none;
+        color: #2e2e2e;
+      }
     }
   }
 }
 .separator {
-  padding: 0 10px;
+    padding: 0 10px;
 }

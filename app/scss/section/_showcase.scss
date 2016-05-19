@@ -1,13 +1,39 @@
+.showcase {
+  width: 100%;
+  line-height: 0.5;
+  &__mobile {
+    padding: 20px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  &__beef {
+    width: 100%;
+    &--text {
+      display: none;
+    }
+  }
+  &__vegan {
+    &--text {
+      display: none;
+    }
+  }
+  &__vegetarian {
+    &--text {
+      display: none;
+    }
+  }
+}
 @include breakpoint($tablet-narrow) {
   .showcase {
-    width: 100%;
-    line-height: 0.5;
+    &__mobile {
+      display: none;
+    }
     &__beef {
-      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       &--text {
+        display: block;
         float: left;
         width: 50%;
         line-height: 1.25;
