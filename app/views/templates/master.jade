@@ -7,13 +7,9 @@ html(lang='en')
     meta(name='viewport', content='width=device-width, minimal-ui, initial-scale=1')
     meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
     link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,300', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='css/main.min.css')
 
     //- link(rel='dns-prefetch', href='//example.com')
-
-    if !production
-      link(rel='stylesheet', href='css/main.css')
-    else
-      link(rel='stylesheet', href='css/main.min.css')
 
   body
     block body
