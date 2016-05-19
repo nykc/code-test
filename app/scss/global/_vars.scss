@@ -1,2 +1,10 @@
 $regular: 'Open Sans', sans-serif;
 $fallback: Helvetica, arial, sans-serif;
+
+// BREAKPOINTS
+$hi-res: min-resolution 1.5dppx;
+$mobile-wide: 480px;
+$tablet-narrow: 720px;
+$tablet-wide: 1024px;
+$laptop: 1200px;
+$desktop: 1400px;

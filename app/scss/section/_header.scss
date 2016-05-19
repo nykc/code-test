@@ -1,11 +1,15 @@
 header {
   .billboard_img {
-    background-image: url('../imgs/banner.png');
-    background-repeat: repeat-x;
-    background-position: 0 0;
-    position: relative;
-    width: 100%;
-    height: 470px;
+    display: none;
+    @include breakpoint($tablet-narrow) {
+      display: block;
+      background-image: url('../imgs/banner.png');
+      background-repeat: repeat-x;
+      background-position: 0 0;
+      position: relative;
+      width: 100%;
+      height: 470px;
+    }
     .overlay {
       position: relative;
       width: 100%;
@@ -31,19 +35,26 @@ header {
   }
   nav {
     display: block;
-    height: 100px;
     border-bottom: 1px solid #e8e7e7;
     box-shadow: 0 4px 4px -2px #ddd;
-    line-height: 100px;
+    height: 220px;
+    @include breakpoint($tablet-narrow) {
+      height: 100px;
+      line-height: 100px;
+    }
     ul {
       display: block;
       text-align: center;
       margin: 0 auto;
       li {
-        display: inline-block;
         text-transform: uppercase;
         vertical-align: middle;
-        margin-right: 75px;
+        padding: 10px 0;
+        @include breakpoint($tablet-narrow){
+          display: inline-block;
+          margin-right: 75px;
+          padding: 0;
+        }
         a {
           text-decoration: none;
           font-size: 20px;

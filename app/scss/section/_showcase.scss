@@ -1,105 +1,107 @@
-.showcase {
-  width: 100%;
-  line-height: 0.5;
-  &__beef {
+@include breakpoint($tablet-narrow) {
+  .showcase {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &--text {
-      float: left;
-      width: 50%;
-      line-height: 1.25;
-      div {
-        width: 80%;
-        margin: 0 auto;
-        h2 {
-          padding-bottom: 10px;
+    line-height: 0.5;
+    &__beef {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &--text {
+        float: left;
+        width: 50%;
+        line-height: 1.25;
+        div {
+          width: 80%;
+          margin: 0 auto;
+          h2 {
+            padding-bottom: 10px;
+          }
+          .dash {
+            display: block;
+            height: 140px;
+            float: left;
+            padding-right: 20px;
+          }
+          p {
+            padding-left: 50px;
+            line-height: 1.5;
+          }
         }
-        .dash {
-          display: block;
-          height: 140px;
-          float: left;
-          padding-right: 20px;
-        }
-        p {
-          padding-left: 50px;
-          line-height: 1.5;
+      }
+      &--image {
+        display: inline-block;
+        float: left;
+        width: 50%;
+      }
+    }
+    &__vegan {
+      clear: both;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &--image {
+        display: inline-block;
+        float: left;
+        width: 50%;
+      }
+      &--text {
+        display: inline-block;
+        line-height: 1.25;
+        float: left;
+        width: 50%;
+        div {
+          width: 80%;
+          margin: 0 auto;
+          h2 {
+            padding-bottom: 10px;
+          }
+          .dash {
+            display: block;
+            height: 140px;
+            float: left;
+            padding-right: 20px;
+          }
+          p {
+            padding-left: 50px;
+            line-height: 1.5;
+          }
         }
       }
     }
-    &--image {
-      display: inline-block;
-      float: left;
-      width: 50%;
-    }
-  }
-  &__vegan {
-    clear: both;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &--image {
-      display: inline-block;
-      float: left;
-      width: 50%;
-    }
-    &--text {
-      display: inline-block;
-      line-height: 1.25;
-      float: left;
-      width: 50%;
-      div {
-        width: 80%;
-        margin: 0 auto;
-        h2 {
-          padding-bottom: 10px;
-        }
-        .dash {
-          display: block;
-          height: 140px;
-          float: left;
-          padding-right: 20px;
-        }
-        p {
-          padding-left: 50px;
-          line-height: 1.5;
+    &__vegetarian {
+      clear: both;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &--text {
+        display: inline-block;
+        line-height: 1.25;
+        float: left;
+        width: 50%;
+        div {
+          width: 80%;
+          margin: 0 auto;
+          h2 {
+            padding-bottom: 10px;
+          }
+          .dash {
+            display: block;
+            height: 140px;
+            float: left;
+            padding-right: 20px;
+          }
+          p {
+            padding-left: 50px;
+            line-height: 1.5;
+          }
         }
       }
-    }
-  }
-  &__vegetarian {
-    clear: both;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &--text {
-      display: inline-block;
-      line-height: 1.25;
-      float: left;
-      width: 50%;
-      div {
-        width: 80%;
-        margin: 0 auto;
-        h2 {
-          padding-bottom: 10px;
-        }
-        .dash {
-          display: block;
-          height: 140px;
-          float: left;
-          padding-right: 20px;
-        }
-        p {
-          padding-left: 50px;
-          line-height: 1.5;
-        }
+      &--image {
+        display: inline-block;
+        float: left;
+        width: 50%;
       }
-    }
-    &--image {
-      display: inline-block;
-      float: left;
-      width: 50%;
     }
   }
 }
